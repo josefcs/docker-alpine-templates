@@ -1,0 +1,6 @@
+# Minute    Hour    Day of Month    Month    Day of Week    Command
+* * * * * echo Hello from alpine-cron
+
+# Note, that debian/ubuntu have one additional entry before "command":
+# the user as which the command should be executed. This is not the case here,
+# so pay attention if you copy the crontab over from another system.
