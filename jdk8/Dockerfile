@@ -1,6 +1,7 @@
 FROM gliderlabs/alpine:3.3
 MAINTAINER Josef.Seibl@gmail.com
 
+# Also installs jdk
 RUN apk-install openjdk8-jre
 
 COPY entrypoint.sh /srv/entrypoint.sh
