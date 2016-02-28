@@ -1,4 +1,4 @@
-FROM gliderlabs/alpine:3.3
+FROM josefcs/alpine-tz-eu
 MAINTAINER Josef.Seibl@gmail.com
 
 # OVERWRITE the crontab for root with our own
