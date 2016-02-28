@@ -4,7 +4,9 @@ This is my collection of useful snippets, best practices and how-tos for docker
 images built with alpine linux as their base (and some directions if you are
 coming from a debian based docker image base).
 
-Ready to clone as a starting base for your own projects :-)
+A part of this repo is used for automated builds on dockerhub: https://hub.docker.com/u/josefcs/
+
+Also, ready to clone as a starting base for your own projects :-)
 
 
 # Motivation
@@ -36,12 +38,23 @@ e.g. `mysql-server` or `apache2`-setup.
 
 # Description of images
 
-## alpine-cron
+My intention is to use as much provided content as possible. i.e. use the packages provided by alpine and not check them out and build them from source. Also I try to keep it as simple as possible, i.e. no complicated setup or init scripts. Configuration should be as straight forward as possible.
 
-## alpine-jar
+## cron
 
-## alpine-alpine-timezone
+Only used as a template, to copy the ENTRYPOINT line to your project. No automated builds because there is no need to install cron, as it is included automatically in alpine due to busybox.
 
+## jdk8
+
+## alpine-timezone
+
+## nginx
+
+Basic nginx from the package provided by alpine. This is a work in progress and config files have yet to be set up.
+
+## nginx-php
+
+See "nginx", but also php support. This should one day be able to run PHP/Zend programs.
 
 # Best practices
 
