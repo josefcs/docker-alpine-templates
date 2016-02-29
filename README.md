@@ -56,6 +56,13 @@ Basic nginx from the package provided by alpine. This is a work in progress and 
 
 See "nginx", but also php support. This should one day be able to run PHP/Zend programs.
 
+## cron-mysqlclient
+
+Contains an entrypoint for crond (see Dockerfile for what you have to do within your image)
+and installs mysql-client. I use it for regular backups of a db. I might be extending it
+with a ssh-client and rsync in order to have off-site backup included.
+
+
 # Best practices
 
 ## busybox
