@@ -44,24 +44,14 @@ My intention is to use as much provided content as possible. i.e. use the packag
 
 Only used as a template, to copy the ENTRYPOINT line to your project. No automated builds because there is no need to install cron, as it is included automatically in alpine due to busybox.
 
-## jdk8
-
-## alpine-timezone
-
 ## nginx
 
 Basic nginx from the package provided by alpine. This is a work in progress and config files have yet to be set up.
+Once it is fully working, it will move into its own repo.
 
 ## nginx-php
 
 See "nginx", but also php support. This should one day be able to run PHP/Zend programs.
-
-## cron-mysqlclient
-
-Contains an entrypoint for crond (see Dockerfile for what you have to do within your image)
-and installs mysql-client. I use it for regular backups of a db. I might be extending it
-with a ssh-client and rsync in order to have off-site backup included.
-
 
 # Best practices
 
