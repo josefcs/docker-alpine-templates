@@ -1,4 +1,4 @@
-FROM josefcs/alpine-tz-eu
+FROM josefcs/cron-mysql-client
 
 MAINTAINER Josef.Seibl@gmail.com
 
